@@ -1,0 +1,41 @@
+nav, header, footer{
+    visibility: hidden;
+}
+body{
+    background-color: white;
+    color:black;
+}
+/*--------------------------------------------pregled.html*/
+table, th, td{
+    border: 1px solid;
+    border-color: black
+}
+tr:nth-child(odd) td{
+    background-color: rgb(67, 67, 67);        
+}
+tr:nth-child(even) td{
+    background-color: rgb(99, 99, 99)        
+}
+/*--------------------------------------------obrazac.html*/
+#lijeviFieldset {
+    float: left;
+    width: 20%
+}
+#srednjiFieldset {
+    float: left;
+    width: 20%;
+}
+#desniFieldset {
+    float: right;
+    width: 20%;
+}
+input[type="button"],[type="reset"],[type="submit"]{
+    visibility: hidden;
+}
+/*-------------------------------------------multimedija.html*/
+img.multimedija{
+    width: 100%;
+}
+iframe.multimedija, audio{
+    visibility: hidden;
+}

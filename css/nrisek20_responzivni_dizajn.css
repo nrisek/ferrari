@@ -1,0 +1,72 @@
+/*Ako je širina ekrana veca od 480px*/
+@media only screen and (min-width: 480px) {
+    /*------------------------------------------Obrazac*/
+    #mainForm{
+        display: grid;
+        margin-right: 5%;
+        margin-left: 5%;
+        grid-template-columns: auto auto auto;
+    }
+    #lijeviFieldset {
+        grid-column: 1;
+    }
+
+    #srednjiFieldset {
+        grid-column: 2;
+    }
+
+    #desniFieldset {
+        grid-column: 3;
+    }
+}
+@media only screen and (min-width: 1900px) {
+    #articleVideo{
+        margin-left: 10%;
+    }
+}
+/*Ako je širina ekrana manja od 480px*/
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: rgb(37, 37, 37);
+    }
+   /*------------------------------------------Popis*/ 
+   th.remove, td.remove, #popisNaslovTablice{
+       visibility: collapse;
+   }
+   table.popis{
+       border: 0px;
+   }
+}
+/*Ako je širina ekrana manja od 1500px*/
+@media only screen and (max-width: 1500px){
+    /*------------------------------------------Multimedija*/ 
+    #articleVideo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Ako je širina ekrana manja od 1130px*/
+@media only screen and (max-width: 1130px){
+    /*------------------------------------------Multimedija*/ 
+    #articleImages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Ako je širina ekrana manja od 600px*/
+@media only screen and (max-width: 600px){
+    /*------------------------------------------Multimedija*/ 
+    img.multimedija:hover{
+        width:400px;
+        height: auto;
+    }
+}
+
+/*---------------------------------------------------Kreativna*/
+@media (min-width: 768px) {
+    .news-input {
+      width: 50%;
+    }
+  }

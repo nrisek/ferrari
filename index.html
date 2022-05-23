@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="hr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nikola Risek">
+    <meta name="keywords" content="Web, HTML, Ferrari">
+    <meta name="description" content="html, div, h1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="materijali/ferrari_logo.png">
+    <link href="css/nrisek20.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="css/nrisek20_ispis.css" rel="stylesheet" media="print" type="text/css">
+    <link href="css/nrisek20_responzivni_dizajn.css" rel="stylesheet" media="screen" type="text/css">
+    <script src="js/nrisek20.js" type="text/javascript"></script>
+    <title>Početna - Ferrari</title>
+</head>
+
+<body>
+    <header>
+        <!--ZAGLAVLJE-->
+        <div class="naslov">
+            <a href="index.html"><img src="materijali/ferrari_logo.png" alt="logo" width="100" /></a>
+            <h1 class="title">Ferrari</h1>
+        </div>
+        <a id="prijava" href="">Prijava</a>
+        <noscript>
+            <dialog open>Vaš preglednik ne podržava JavaScript!</dialog>
+        </noscript>
+        <nav>
+            <a href="index.html" class="navLink">Početna stranica</a>
+            <a href="obrazac.html" class="navLink">Obrazac</a>
+            <a href="ostalo/multimedija.html" class="navLink">Multimedija</a>
+            <a href="ostalo/o_autoru.html" class="navLink">O autoru</a>
+            <a href="podaci/popis.html" class="navLink">Popis</a>
+            <a href="ostalo/kreativna.html" class="navLink">Kreativna stranica</a>
+        </nav>
+    </header>
+    <!--SADRŽAJ-->
+    <div>
+        <div id="slikaDiv">
+            <figure>
+                <img id="indexSlika" src="materijali/ferrari_home.jpg" alt="Ferrari" usemap="#ferrari_map">
+                <figcaption id="indexFigcapt">Ferrari</figcaption>
+            </figure>
+            <map name="ferrari_map" id="map">
+                <area id="circle" alt="slike" href="ostalo/multimedija.html#slike" coords="103,86,70" shape="circle">
+                <area id="rect" alt="video materijali" href="ostalo/multimedija.html#video" coords="113,278,292,374" shape="rect">
+                <area id="poly" alt="audio materijali" href="ostalo/multimedija.html#audio" coords="382,45,588,76,509,364"
+                    shape="poly">
+            </map>
+        </div>
+        <div id="opisDiv">
+            <p>
+                Ferrari S.p.A. je talijanski proizvođač sportskih automobila kojemu se sjedište nalazi u <a
+                    href="https://www.google.com/maps/place/41053+Maranello,+Province+of+Modena,+Italy/@44.529039,10.8508739,14z/data=!3m1!4b1!4m5!3m4!1s0x477fe3a68615c257:0x3c16ac6b4ee57f8a!8m2!3d44.5263024!4d10.8666834">Maranellu,
+                    Italiji</a>.
+                Trenutni predsjednik tvrtke je <b>Luca Cordero di Montezemolo</b>, a podpredsjednik Piero Ferrari.
+                Tvrtku je osnovao Enzo Ferrari, 1929. godine pod imenom Scuderia Ferrari u Modeni, Italiji.
+                Za vrijeme Drugog svjetskog rata tvrtka se preselila u Maranello.
+                U početku tvrtka je radila samo trkače automobile, te je sponzorirala vozače.
+                1947. godine tvrtka je počela raditi cestovne sportske automobile.
+                Kroz cijelu povijest tvrtka je poznata po sudjelovanjima u utrkivanjima, posebno u <a
+                    href="https://www.formula1.com/">Formuli 1</a> gdje ima najviše uspjeha.
+                Ferrarijevi cestovni automobili su uglavnom prikazani kao simbol luksuza i bogatstva.
+            </p>
+        </div>
+    </div>
+    <template>
+        <canvas id="mojCanvas" height="100" width="200">Nije podržano</canvas>
+    </template>
+    <footer>
+        <!--PODNOŽJE-->
+        <h5>&copy; 2022. <a href="mailto:nrisek20@foi.hr">Nikola Risek</a></h5>
+        <a rel="licence" href="http://creativecommons.org/licenses/by/4.0/"><img class="licence" alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br>
+        <!--"https://validator.w3.org/check/?url=https://spider.foi.hr/OWT/2022/zadaca_01/nrisek20/index.html"-->
+        <a href="https://validator.w3.org/check/?url=https://spider.foi.hr/OWT/2022/zadaca_01/nrisek20/index.html"><img class="footerImg" src="materijali/html5-logo.png" alt="HTML5 logo"></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_02/nrisek20/css/nrisek20.css"><img class="footerImg" src="materijali/css3.png" alt="CSS3 logo">nrisek20.css</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_02/nrisek20/css/nrisek20_responzivni_dizajn.css"><img class="footerImg" src="materijali/css3.png" alt="CSS3 logo">nrisek20_responzivni_dizajn.css</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_02/nrisek20/css/nrisek20_ispis.css"><img class="footerImg" src="materijali/css3.png" alt="CSS3 logo">nrisek20_ispis.css</a>
+        <a class="goToTop" href="index.html"><img src="materijali/go-to-top.png" alt="Idi na vrh stranice"></a>
+    </footer>
+</body>
+
+</html>

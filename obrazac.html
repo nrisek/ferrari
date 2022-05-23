@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="hr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nikola Risek">
+    <meta name="keywords" content="Web, HTML, Ferrari">
+    <meta name="description" content="html, form, h1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="materijali/ferrari_logo.png">
+    <link href="css/nrisek20.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="css/nrisek20_ispis.css" rel="stylesheet" media="print" type="text/css">
+    <link href="css/nrisek20_responzivni_dizajn.css" rel="stylesheet" media="screen" type="text/css">
+
+    <title>Obrazac</title>
+
+</head>
+
+<body>
+    <header>
+        <!--ZAGLAVLJE-->
+        <div class="naslov">
+            <a href="index.html"><img src="materijali/ferrari_logo.png" alt="logo" width="100" height="100" /></a>
+            <h1 class="title">Obrazac</h1>
+        </div>
+        <a id="prijava" href="">Prijava</a>
+        <noscript>
+            <dialog open>Vaš preglednik ne podržava JavaScript!</dialog>
+        </noscript>
+        <nav>
+            <a href="index.html" class="navLink">Početna stranica</a>
+            <a href="obrazac.html" class="navLink">Obrazac</a>
+            <a href="ostalo/multimedija.html" class="navLink">Multimedija</a>
+            <a href="ostalo/o_autoru.html" class="navLink">O autoru</a>
+            <a href="podaci/popis.html" class="navLink">Popis</a>
+            <a href="ostalo/kreativna.html" class="navLink">Kreativna stranica</a>
+        </nav>
+    </header>
+    <!--SADRŽAJ-->
+    <form id="mainForm" method="POST" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" novalidate>
+        <fieldset id="lijeviFieldset">
+            <legend>O meni</legend>
+            <label id="labela_ime" for="ime_prezime">Ime i prezime:</label><br>
+            <input type="text" id="ime_prezime" name="ime_prezime" size="40" maxlength="40"
+                placeholder="Ime i prezime"><br>
+            <label id="labela_datum" for="datum_rodenja">Datum i vrijeme rođenja:</label><br>
+            <input id="datum_rodenja" type="datetime-local" name="datum_rodenja"><br>
+            <label id="labela_opis" for="kratak_opis">Kratak opis:</label><br>
+            <textarea id="kratak_opis" name="kratak_opis" rows="10" cols="40" maxlength="1000"
+                placeholder="Kratak opis"></textarea><br>
+            <label id="labela_email" for="email">Email:</label><br>
+            <input id="email" type="email" name="email"><br>
+            <label id="labela_volite" for="volite">Koliko volite marku Ferrari? (0-100)</label>
+            <input id="volite" type="number" name="volite" value="1"><br>
+            <input type="button" onclick="alert('Volim Ferrari!')" value="Klikni me!"><br>
+        </fieldset>
+
+        <fieldset id="srednjiFieldset">
+            <legend>Odabir automobila</legend>
+            <label id="labela_interijer" for="interijer">Interijer:</label><br>
+            <input id="interijer" name="interijer" type="radio" value="brusena" checked>Brušena koža<br>
+            <input name="interijer" type="radio" value="carbon">Carbon Fibre<br>
+            <input name="interijer" type="radio" value="koza">Koža<br>
+            <input name="interijer" type="radio" value="vegan">Veganska koža<br>
+            <label id="labela_odabir_automobila" for="odabir_automobila">Odaberite automobil/e:</label>
+            <select id="odabir_automobila" name="odabir_automobila[]" multiple>
+                <optgroup label="4 sjedala:">
+                    <option value="gtc4">GTC4 Lusso</option>
+                    <option value="california">California</option>
+                    <option value="ff">FF</option>
+                </optgroup>
+                <optgroup label="2 sjedala:">
+                    <option value="488">488</option>
+                    <option value="458">458</option>
+                    <option value="laferrari">LaFerrari</option>
+                    <option value="812">812 Superfast</option>
+                </optgroup>
+            </select><br>
+            Držite CTRL/Command kako biste odabrali više automobila.<br>
+        </fieldset>
+
+
+        <fieldset id="desniFieldset">
+            <legend>Ostale specifikacije</legend>
+            Što želite od dodatne opreme?<br>
+            <input id="grijana" type="checkbox" name="grijana" value="grijana">
+            <label id="labela_grijana" for="grijana">Grijana sjedala</label><br>
+            <input id="auspuh" type="checkbox" name="auspuh" value="auspuh">
+            <label id="labela_auspuh" for="auspuh">Sportske ispušne cijevi</label><br>
+            <input id="panorama" type="checkbox" name="panorama" value="panorama">
+            <label id="labela_panorama" for="panorama">Panoramski krov</label><br>
+            <label for="boja">Boja automobila:</label>
+            <input id="boja" type="color" name="boja"><br>
+        </fieldset>
+        <input type="reset" value="RESETIRAJ">
+        <input id="mainSubmit" type="submit" value="UNESI"><br>
+    </form>
+
+    <footer>
+        <!--PODNOŽJE-->
+        <h5>&copy; 2022. <a href="mailto:nrisek20@foi.hr">Nikola Risek</a></h5>
+        <a rel="licence" href="http://creativecommons.org/licenses/by/4.0/"><img class="licence"
+                alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br>
+        <!--https://validator.w3.org/check/?url=https://spider.foi.hr/OWT/2022/zadaca_01/nrisek20/obrazac.html-->
+        <a href="https://validator.w3.org/check/?url=https://spider.foi.hr/OWT/2022/zadaca_02/nrisek20/obrazac.html"><img
+                class="footerImg" src="materijali/html5-logo.png" alt="HTML5 logo"></a>
+        <a class="goToTop" href="obrazac.html"><img src="materijali/go-to-top.png" alt="Idi na vrh stranice"></a>
+    </footer>
+
+    <script src="js/nrisek20.js" type="text/javascript"></script>
+</body>
+
+</html>

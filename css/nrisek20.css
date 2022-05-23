@@ -1,0 +1,264 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    color: lightblue;
+}
+a.navLink{
+    color: white;
+}
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+footer{
+    text-align: center;
+    margin-top: 4%;
+    background-color: rgb(131, 14, 14);
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.verificationLogo{
+    width: 20px;
+    height: 20px;
+}
+.footerImg{
+    margin-top: 1%;
+    width: 30px;
+    height: 30px;
+}
+.naslov img{
+    float: left;
+}
+.title{
+    font-size: 250%;
+}
+div.naslov{
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+div.naslov > a{
+    margin: 1%;
+    margin-right: -0.5%;
+}
+div.naslov > img{
+    flex: 1;
+}
+div.naslov > h1{
+    flex: 2;
+    margin: 1%;
+}
+nav{
+    background-color: rgb(131, 14, 14);
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 115%;;
+}
+nav a{
+    margin: .5%;
+    text-decoration: solid;
+    font-size: 110%;
+}
+nav a:hover{
+    font-weight: bolder;
+}
+nav a:visited{
+    color:inherit;
+}
+#prijava{
+    font-size: 115%;
+    float:right;
+    margin-right: 1%;
+    padding: 1%;
+    text-decoration: solid;
+}
+#prijava:hover{
+    font-weight: bolder;
+}
+#prijava:visited{
+    color:inherit;
+}
+.goToTop{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+[alt="Idi na vrh stranice"]{
+    border-radius: 10px;
+    width:20px;
+    height: 20px;
+}
+
+
+/*--------------------------------------------------index.html*/
+
+#indexSlika{
+    box-shadow: 10px 10px 5px rgb(4, 4, 4);
+    width: 50%;
+    margin-top: 3%;
+}
+#indexFigcapt{
+    margin-top: 1%;
+}
+#slikaDiv{
+    text-align: center;
+}
+#opisDiv{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+/*--------------------------------------------------obrazac.html*/
+
+#mainForm{
+    margin-top: 3%;
+}
+
+[type="reset"]{
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    border-radius: 10px;
+    padding: 3%;
+    margin-top: 2%;
+    top:10%;
+    background-color: rgb(131, 14, 14);
+    color: white;
+    font-weight: bold;
+}
+[type="submit"]{
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    border-radius: 10px;
+    padding: 3%;
+    margin-top: 2%;
+    top:10%;
+    background-color: rgb(131, 14, 14);
+    color: white;
+    font-weight: bold;
+}
+[type="reset"]:hover, [type="submit"]:hover{
+    border-color: white;
+}
+
+
+/*--------------------------------------------------pregled.html*/
+
+
+/*--------------------------------------------------popis.html*/
+table, th, td{
+    white-space: pre-line;
+    border: 1px solid;
+    border-color: rgb(131, 14, 14);
+}
+table.popis{
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#popisNaslovTablice{
+    margin-bottom: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+tr:nth-child(odd) td{
+    background-color: rgb(131, 14, 14);        
+}
+tr:nth-child(even) td{
+    background-color: rgb(76, 76, 76);       
+}
+tr:hover td{
+    background-color: rgb(255, 131, 133);
+}
+#omiljeneKnjige{
+    height: 400px;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+/*--------------------------------------------------o_autoru.html*/
+
+li{
+    margin:1%;
+}
+.citat{
+    height: 70px;
+    overflow: auto;
+}
+
+/*--------------------------------------------------multimedija.html*/
+img.multimedija, iframe.multimedija{
+    width: 200px;
+    height: 200px;
+}
+img.multimedija:hover{
+    width:500px;
+    height: auto;
+}
+h2#slike{
+    margin-top: 3%;
+}
+h2#slike, h2#video, h2#audio{
+    text-align: center;
+    font-size: 200%;
+}
+#articleImages{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+}
+#articleVideo{
+    display: flex;
+    margin-left: 3%;
+    flex-direction: row;
+}
+#articleAudio{
+    text-align: center;
+}
+#firstVideo{
+    margin:1%;
+}
+#firstVideo ~ iframe{
+    margin: 1%;
+}
+audio{
+    margin: 1%;
+}
+#secondLastAudio ~ audio{
+    margin-bottom: 2%;
+}
+
+/*---------------------------------------Kreativna*/
+
+body.kreativna::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+.text-justify{
+    text-align: justify;
+}
+.ferrari-red{
+    background-color: rgb(131, 14, 14);
+}
+.kreativnaSlika{
+    width: 100%;
+}
+.kreativnaVideo{
+    width: 100%;
+    height: 500px;
+}
+.pozadina{
+    background-color: rgb(37, 37, 37);
+}
+
+
+
